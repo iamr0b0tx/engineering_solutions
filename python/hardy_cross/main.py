@@ -168,5 +168,5 @@ def readJson(filepath):
         return json.load(f)
 
 if __name__ == '__main__':
-    collecting_input = True
+    collecting_input = False
     main()
