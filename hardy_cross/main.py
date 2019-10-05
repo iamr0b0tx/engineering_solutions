@@ -16,7 +16,7 @@ def updateNodes(cfs):
 
         NODES[node1][node2][Q] += cf
         NODES[node2][node1][Q] += cf
-    return
+    return 
 
 def runIteration():
     # the loops
@@ -30,8 +30,8 @@ def runIteration():
     print('{} loop(s) found\n=======================\n'.format(loops_n))
 
     if loops_n == 0:
-        input('no loop')
-        return
+        print('no loop')
+        return 0
 
     s_delta = 0
     for loop_i, loop in enumerate(loops):
@@ -111,25 +111,26 @@ def splitFlow():
     return
 
 def main():
-    global G, NODES
+    global G, NODES, collecting_input
 
     '''the entry of the program'''
 
-    # # get the node network
-    # while gettingK():
-    #     pass
+    if collecting_input:
+        # get the node network
+        while gettingK():
+            pass
 
-    # # the inlet
-    # while gettingInlets():
-    #     pass
+        # the inlet
+        while gettingInlets():
+            pass
 
-    # # the outlet
-    # while gettingOutlets():
-    #     pass
+        # the outlet
+        while gettingOutlets():
+            pass
 
-    # data = json_graph.node_link_data(G)
-    # writeJson('graph.json', data)
-    # writeJson('nodes.json', NODES)
+        data = json_graph.node_link_data(G)
+        writeJson('graph.json', data)
+        writeJson('nodes.json', NODES)
     
     G = json_graph.node_link_graph(readJson('graph.json'))
     NODES = readJson('nodes.json')
@@ -167,4 +168,5 @@ def readJson(filepath):
         return json.load(f)
 
 if __name__ == '__main__':
+    collecting_input = True
     main()
