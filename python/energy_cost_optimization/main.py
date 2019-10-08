@@ -1,3 +1,5 @@
+from math import ceil
+
 import numpy as np
 from scipy.optimize import minimize
 from matplotlib import pyplot as plt
@@ -39,7 +41,7 @@ CLF_people = 0.85
 CLF_light = 0.93
 
 # define constants
-max_guess = 50
+max_guess = 3
 area_of_room, foot_candles = 81, 50
 
 # the lighting options
@@ -63,8 +65,6 @@ assert len(light_power_rating) == number_of_light_types
 assert len(luminous_efficacy) == number_of_light_types
 assert len(lighting_use_factor) == number_of_light_types
 assert len(lighting_balast_factor) == number_of_light_types
-
-solutions = []
 
 def callback(x):
     solutions.append(x)
@@ -93,7 +93,7 @@ def getCoolingLoad(x):
     total_cooling_energy = Q_wall + Q_window + Q_shtg + Q_sensible + Q_latent + Q_lighting
     return total_cooling_energy
 
-def objective(x):
+def calcObjective(x):
     # total lighting values
     total_light_energy = sum([x[i] * light_power_rating[i] for i in range(number_of_light_types)])
     total_light_cost = sum([x[i] * light_cost[i] for i in range(number_of_light_types)])
@@ -106,7 +106,10 @@ def objective(x):
     total_energy = total_light_energy + total_cooling_energy
     total_cost = total_light_cost + total_cooling_cost
     
-    return total_energy + total_cost
+    return total_energy, total_cost
+
+def objective(x):
+    return sum(calcObjective(x))
 
 def lightingConstraint(x):
     lum_eff = sum([x[i] * luminous_efficacy[i] for i in range(number_of_light_types)])
@@ -124,8 +127,13 @@ def coolingConstraint(x):
     nl = np.inf if total_power == 0 else total_cooling_load / total_power
     return nl - 1
 
+
 # initial guesses
 x0 = np.random.randint(max_guess, size=total_number_of_options)
+# x0 = np.full(total_number_of_options, max_guess)
+
+# solutions
+solutions = [x0]
 
 # show initial objective
 print('Initial SSE Objective: ' + str(objective(x0)))
@@ -156,6 +164,29 @@ for i in range(total_number_of_options):
     print('{:>15s} {} = {:.4f}'.format(text, i+offset, x[i]))
 
 solutions = np.array(solutions)
-# plt.plot(solutions[:, 0:number_of_light_types])
-plt.plot(solutions[:, number_of_light_types:total_number_of_options])
+energy, cost = np.array([calcObjective(x) for x in solutions]).T
+
+plt.subplot(221)
+plt.plot(energy)
+plt.title('Energy against Number of Iterations')
+plt.legend(['Min Energy {:,.4f} Watt'.format(energy[-1])])
+
+
+plt.subplot(222)
+plt.plot(cost)
+plt.title('Cost against Number of Iterations')
+plt.legend(['Min Cost {:,.4f} Naira'.format(cost[-1])])
+
+light = solutions[:, 0:number_of_light_types]
+plt.subplot(223)
+plt.plot(light)
+plt.title('Number of Light Types against Number of Iterations')
+plt.legend(['x{} {:.4f}~{}'.format(i+1, x[i], ceil(x[i])) for i in range(light.shape[1])])
+
+cooling = solutions[:, number_of_light_types:total_number_of_options]
+plt.subplot(224)
+plt.plot(cooling)
+plt.title('Number of Cooling Types against Number of Iterations')
+plt.legend(['x{} {:.4f}~{}'.format(i+1, x[number_of_light_types + i], ceil(x[number_of_light_types + i])) for i in range(cooling.shape[1])])
+
 plt.show()
