@@ -16,7 +16,7 @@ dx = 0.0225;
 dt = 1800;
 
 %the iteration
-number_of_iterations = 10000;
+number_of_iterations = 3;
 
 %the CL values and the titles
 titles = {
@@ -44,6 +44,9 @@ for i=1:length(titles)
     hold on;
     
     for t=0:dt:tmax
+%         if CL(i) ~= 0.921 || t ~= 0
+%             continue
+%         end
         %the variation of x along xmax
         x = 0:dx:xmax;
         
@@ -62,6 +65,9 @@ for i=1:length(titles)
         xlabel('Concentration (mol/m3)');
         ylabel('distance meters');
     end
+       
+    %add legend to graph
+    legend('t = 0s', 't = 1800s', 't = 3600s', 't = 5400s', 't = 7200s')
     
     %release the graph for another graph
     hold off;

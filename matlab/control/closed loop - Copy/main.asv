@@ -1,0 +1,22 @@
+clear all;
+clc;
+
+s
+
+K = 1;
+
+Gnum = 1;
+Gden = (s-1);
+G = tf(Gnum, Gden);
+
+Hnum = s+2;
+Hden = sym2poly(((s+1)*(s+1)) + 1);
+H = tf(Hnum, Hden);
+
+T = feedback(G*K, H);
+
+figure
+step(T);
+
+figure
+rlocus(T);
