@@ -198,9 +198,8 @@ def coolingConstraint(x):
 
 def windConstraint(x):
     total_energy, _ = calcObjective(x)
-    rotor_radius = x[wind_starting_index:wind_ending_index]
+    rotor_radius = x[wind_starting_index]
     return total_energy - (0.5 * per * air_density * pi * rotor_radius * wind_speed ** 3)
-
 
 # specify energy type
 energy_supply_type = input('Press 1 for solar and 0 for wind: ')
@@ -221,7 +220,8 @@ cons = ([
 ])
 
 if not solar_state:
-    cons.append({'type': 'eq', 'fun': windConstraint})
+    cons.append({'type': 'ineq', 'fun': windConstraint})
+
 else:
     total_number_of_options -= number_of_wind_options
 
