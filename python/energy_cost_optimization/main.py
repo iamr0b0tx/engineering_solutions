@@ -45,8 +45,8 @@ CLF_light = 0.93
 
 # define parameters for wind
 per = 1
-air_density = 1
-wind_speed = 1
+air_density = 1.1664
+wind_speed = 4.3
 
 # define constants
 max_guess = 3
@@ -87,27 +87,32 @@ cooling_ending_index = cooling_starting_index + number_of_cooling_options
 wind_ending_index = wind_starting_index + number_of_wind_options
 
 # solar parameters
-total_area = 1
+total_area = 1589
 fcomp = 1
 fmain = 1
 fdirt = 1
 n_alpha_cable = 1
 n_ac_cable = 1
 n_inverter = 1
-peak_sun_hours = 1
+peak_sun_hours = 5
 
 # options
-pv_rating = [1]
-pv_cost = [1]
-pv_area = [1]
+pv_rating = [50, 100, 150, 200]
+pv_cost = [1000, 2000, 3000, 4000]
+pv_area = [1, 2, 3, 4]
 length_of_solar_options = len(pv_cost)
 
-npv = lambda area_PV: total_area / area_PV
+def npv(area_PV): return total_area / area_PV
+
 sys_eff = fcomp * fmain * fdirt * n_inverter * n_alpha_cable * n_ac_cable
-Epv = lambda area_PV, power_rating_PV: npv(area_PV) * sys_eff * power_rating_PV * peak_sun_hours
+
+def Epv(area_PV, power_rating_PV): return npv(area_PV) * \
+    sys_eff * power_rating_PV * peak_sun_hours
+
 
 def callback(x):
     solutions.append(x)
+
 
 def getCoolingLoad(x):
     # cooling load for wall
@@ -128,7 +133,7 @@ def getCoolingLoad(x):
 
     # cooling load for light
     Q_lighting = sum([x[i] * light_power_rating[i] * lighting_use_factor[i] *
-                     lighting_balast_factor[i] for i in range(number_of_light_types)]) * CLF_light
+                      lighting_balast_factor[i] for i in range(number_of_light_types)]) * CLF_light
 
     # total cooling load
     total_cooling_energy = Q_wall + Q_window + \
@@ -141,22 +146,22 @@ def calcObjective(x):
     total_light_energy = sum([
         x[i] * light_power_rating[i] for i in range(number_of_light_types)
     ])
-    
+
     total_light_cost = sum([
         x[i] * light_cost[i] for i in range(number_of_light_types)
     ])
 
     # total cooling values
     total_cooling_energy = sum([
-            x[i] * cooling_power_rating[i-number_of_light_types]\
-                for i in range(cooling_starting_index, cooling_ending_index)
-        ]
+        x[i] * cooling_power_rating[i-number_of_light_types]
+        for i in range(cooling_starting_index, cooling_ending_index)
+    ]
     )
-    
+
     total_cooling_cost = sum([
         x[i] * cooling_cost[i-number_of_light_types] for i in range(
             cooling_starting_index, cooling_ending_index)
-        ]
+    ]
     )
 
     # total energy and cost
@@ -172,9 +177,9 @@ def objective(x):
 
 def lightingConstraint(x):
     lum_eff = sum([x[i] * luminous_efficacy[i]
-                  for i in range(number_of_light_types)])
-    pow_rate = sum([x[i] * light_power_rating[i]
                    for i in range(number_of_light_types)])
+    pow_rate = sum([x[i] * light_power_rating[i]
+                    for i in range(number_of_light_types)])
 
     denom = (lum_eff * pow_rate)
 
@@ -185,18 +190,29 @@ def lightingConstraint(x):
 def coolingConstraint(x):
     total_cooling_load = getCoolingLoad(x)
     total_power = sum([x[i] * cooling_power_rating[i-number_of_light_types]
-                      for i in range(cooling_starting_index, cooling_ending_index)])
+                       for i in range(cooling_starting_index, cooling_ending_index)])
 
     nl = np.inf if total_power == 0 else total_cooling_load / total_power
     return nl - 1
 
+
 def windConstraint(x):
     total_energy, _ = calcObjective(x)
     rotor_radius = x[wind_starting_index:wind_ending_index]
-    return total_energy - (0.5 * per * air_density * pi * rotor_radius * wind_speed)
+    return total_energy - (0.5 * per * air_density * pi * rotor_radius * wind_speed ** 3)
+
 
 # specify energy type
-energy_supply_type='solar'
+energy_supply_type = input('Press 1 for solar and 0 for wind: ')
+
+solar_state = None
+while solar_state is None:
+    try:
+        solar_state = bool(int(energy_supply_type))
+    
+    except Exception as e:
+        energy_supply_type = input('Press 1 for solar and 0 for wind: ').strip()
+        
 
 # define constriants
 cons = ([
@@ -204,12 +220,9 @@ cons = ([
     {'type': 'eq', 'fun': coolingConstraint},
 ])
 
-solar_state = False
-if energy_supply_type == 'wind':
+if not solar_state:
     cons.append({'type': 'eq', 'fun': windConstraint})
-
 else:
-    solar_state = True
     total_number_of_options -= number_of_wind_options
 
 # initial guesses
@@ -217,18 +230,18 @@ else:
 x0 = np.full(total_number_of_options, max_guess)
 
 # solutions
-solutions=[x0]
+solutions = [x0]
 
 # show initial objective
 print('Initial SSE Objective: ' + str(objective(x0)))
 
 # the bounds
-b=(0, 5)
-bnds=tuple(b for _ in range(total_number_of_options))
+b = (0, 5)
+bnds = tuple(b for _ in range(total_number_of_options))
 
-solution=minimize(objective, x0, method='SLSQP', bounds=bnds,
-                  constraints=cons, callback=callback)
-x=solution.x
+solution = minimize(objective, x0, method='SLSQP', bounds=bnds,
+                    constraints=cons, callback=callback)
+x = solution.x
 
 # show final objective
 print('Final SSE Objective: ' + str(objective(x)), end='\n\n')
@@ -238,11 +251,11 @@ total_energy, _ = calcObjective(x)
 
 # print solution
 print('Solution\n===============')
-text='Lighting Type'
-offset=1
+text = 'Lighting Type'
+offset = 1
 for i in range(total_number_of_options):
     if i == cooling_starting_index:
-        text='Cooling Type'
+        text = 'Cooling Type'
         offset -= number_of_light_types
 
     elif i == wind_starting_index:
@@ -251,8 +264,8 @@ for i in range(total_number_of_options):
 
     print('{:>15s} {} = {:.4f}'.format(text, i+offset, x[i]))
 
-solutions=np.array(solutions)
-energy, cost=np.array([calcObjective(x) for x in solutions]).T
+solutions = np.array(solutions)
+energy, cost = np.array([calcObjective(x) for x in solutions]).T
 
 plt.subplot(321)
 plt.plot(energy)
@@ -265,50 +278,50 @@ plt.plot(cost)
 plt.title('Cost against Number of Iterations')
 plt.legend(['Min Cost {:,.4f} Naira'.format(cost[-1])])
 
-light=solutions[:, 0:number_of_light_types]
+light = solutions[:, 0:number_of_light_types]
 plt.subplot(323)
 plt.plot(light)
 plt.title('Number of Light Types against Number of Iterations')
 plt.legend(['x{} {:.4f}~{}'.format(i+1, x[i], ceil(x[i]))
-           for i in range(light.shape[1])])
+            for i in range(light.shape[1])])
 
-cooling=solutions[:, cooling_starting_index:cooling_ending_index]
+cooling = solutions[:, cooling_starting_index:cooling_ending_index]
 plt.subplot(324)
 plt.plot(cooling)
 plt.title('Number of Cooling Types against Number of Iterations')
 plt.legend(['x{} {:.4f}~{}'.format(i+1, x[cooling_starting_index + i],
-           ceil(x[cooling_starting_index + i])) for i in range(cooling.shape[1])])
+                                   ceil(x[cooling_starting_index + i])) for i in range(cooling.shape[1])])
 
 if not solar_state:
-    wind=solutions[:, wind_starting_index:wind_ending_index]
+    wind = solutions[:, wind_starting_index:wind_ending_index]
     plt.subplot(325)
     plt.plot(wind)
     plt.title('Rotor radius against Number of Iterations')
     plt.legend(['x{} {:.4f}~{}'.format(i+1, x[wind_starting_index + i], ceil(x[wind_starting_index + i])
-            if i == 1 else x[wind_starting_index + i]) for i in range(wind.shape[1])])
+                                       if i == 1 else x[wind_starting_index + i]) for i in range(wind.shape[1])])
 
 else:
-# -----------------------------------solar optimization------------------------------------
+    # -----------------------------------solar optimization------------------------------------
     minimum_pv_cost = optimal_pv_index = None
-    costs = [1]
-    pv_energy = [1]
+    total_pv_costs = []
+    pv_energy = []
 
     for i in range(length_of_solar_options):
         pv_energy.append(Epv(pv_area[i], pv_rating[i]))
 
+        # cost of current pv
+        total_pv_costs.append(pv_cost[i] * npv(pv_area[i]))
+
         # skip of energy is not enough
         if pv_energy[-1] < total_energy:
             continue
-        
-        # cost of current pv
-        costs.append(pv_cost * npv(pv_area[i]))
 
         if optimal_pv_index is None:
             optimal_pv_index = i
-            minimum_pv_cost = costs[-1]
+            minimum_pv_cost = total_pv_costs[-1]
 
-        elif cost < minimum_pv_cost:
-            minimum_pv_cost = costs[-1]
+        elif total_pv_costs[-1] < minimum_pv_cost:
+            minimum_pv_cost = total_pv_costs[-1]
             optimal_pv_index = i
 
     if optimal_pv_index is None:
@@ -317,15 +330,16 @@ else:
     else:
         print(
             'optimal type is Type {}: cost = {:,.4f}, energy = {:,.4f}'.format(
-                optimal_pv_index+1, minimum_pv_cost, pv_energy[-1][optimal_pv_index]
+                optimal_pv_index +
+                1, minimum_pv_cost, pv_energy[optimal_pv_index]
             )
         )
-        print(costs)
+        print(total_pv_costs)
         print(pv_energy)
 
         plt.subplot(325)
         plt.title('Solar PV Cost')
-        plt.bar(range(1, length_of_solar_options+1), costs)
+        plt.bar(range(1, length_of_solar_options+1), total_pv_costs)
 
         plt.subplot(326)
         plt.title('Solar PV Energy')
@@ -333,5 +347,3 @@ else:
 
 # show all plots
 plt.show()
-
-
