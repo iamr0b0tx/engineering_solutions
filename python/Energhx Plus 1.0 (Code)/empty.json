@@ -1,0 +1,14 @@
+{
+    "rooms": {
+        "fake": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {},
+            "cooling_load": {
+                "result": {},
+                "saved_data": {}
+            }
+        }
+    },
+    "retrofit": {}
+}

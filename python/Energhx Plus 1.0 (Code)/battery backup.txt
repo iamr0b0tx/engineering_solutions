@@ -1,0 +1,321 @@
+import sys
+from PyQt5.QtWidgets import (
+    QApplication, QWidget, QVBoxLayout, QGroupBox, QGridLayout, QPushButton,
+    QSpinBox, QLabel, QComboBox
+)
+
+from PyQt5.QtGui import QIcon
+
+# the system module
+import sys
+
+
+# Battery Design
+from math import cos, pi, ceil
+
+# from third party
+import numpy as np
+
+from scipy.integrate import quad
+from matplotlib import pyplot as plt
+
+
+# m_v = total vehicle mass (kg)
+# a_v = vehicle acceleration (m / s2)
+# g = gravitational acceleration
+# ∝_s = road slope angle
+# c_rr = road rolling resistance coefficient
+# c_d = air drag coefficient
+# rho = air density (kg / m3)
+# A = vehicle frontal area (m2)
+# v_v = vehicle speed (m / s)
+# T_d = total length of drive cycle (km)
+
+m_v = 1908
+a_v = 10
+g = 9.81
+alpha_s = 0
+c_rr = .011
+c_d = .36
+rho = 1.202
+A = 2.42
+v_v = 220
+
+total_length_of_drive_cycle = 23.266
+auxilliary_energy = 9.241
+efficiency_of_the_powertrain = 0.9
+vehicle_drive_range = 250
+
+# battery params
+battery_cost = [100, 150, 200, 300]
+length_of_battery_options = len(battery_cost)
+battery_cell_capacity = [3.2, 3.4, 3.6, 3.8]
+battery_cell_mass = [.0485] * length_of_battery_options
+battery_cell_voltage = [3.57, 3.75, 3.8, 2.75]
+battery_nominal_voltage = [400] * length_of_battery_options
+volume_of_battery_cell = [1.8, 2.0, 1.5, 1.12]
+
+class App(QWidget):
+
+    def __init__(self):
+        super().__init__()
+        self.title = 'PyQt5 simple window - pythonspot.com'
+        self.left = 10
+        self.top = 10
+        self.width = 640
+        self.height = 480
+        self.initUI()
+
+        # save the data
+        self.data = {
+            'm_v': m_v, 'a_v': a_v, 'alpha_s': alpha_s, 'c_rr': c_rr, 'c_d': c_d,
+            'rho': rho, 'A': A, 'v_v': v_v
+        }
+
+    def initUI(self):
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.left, self.top, self.width, self.height)
+
+        self.createGridLayout()
+        self.createGridLayout2()
+
+        windowLayout = QGridLayout()
+        windowLayout.setColumnStretch(1, 4)
+        windowLayout.setColumnStretch(2, 4)
+
+        windowLayout.addWidget(self.horizontalGroupBox)
+        windowLayout.addWidget(self.horizontalGroupBox2)
+        self.setLayout(windowLayout)
+
+        self.show()
+
+    def optimize(self):
+        m_v, a_v, alpha_s, c_rr, c_d, rho, A, v_v = [
+            self.data[key] for key in 'm_v, a_v, alpha_s, c_rr, c_d, rho, A, v_v'.split(', ')
+        ]
+
+        print(self.data)
+        result = getMinimum(m_v, a_v, alpha_s, c_rr, c_d, rho, A, v_v)
+
+    def createGridLayout(self):
+        self.horizontalGroupBox = QGroupBox("Vehicle Paramters")
+        layout = QGridLayout()
+        layout.setColumnStretch(5, 4)
+        layout.setColumnStretch(10, 4)
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(m_v)
+        layout.addWidget(QLabel("Vehicle Mass (kg):"), 0, 0)
+        layout.addWidget(numEntry, 0, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'m_v': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(a_v)
+        layout.addWidget(QLabel("vehicle Acceleration (m/s2):"), 1, 0)
+        layout.addWidget(numEntry, 1, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'a_v': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(alpha_s)
+        layout.addWidget(QLabel("Road slope angle:"), 2, 0)
+        layout.addWidget(numEntry, 2, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'alpha_s': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(c_rr)
+        layout.addWidget(
+            QLabel("Road rolling resistance coefficient:"), 3, 0)
+        layout.addWidget(numEntry, 3, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'c_rr': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(c_d)
+        layout.addWidget(QLabel("Air drag coefficient:"), 4, 0)
+        layout.addWidget(numEntry, 4, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'c_d': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(rho)
+        layout.addWidget(QLabel("Air density (kg / m3):"), 5, 0)
+        layout.addWidget(numEntry, 5, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'rho': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(A)
+        layout.addWidget(QLabel("vehicle frontal area (m2):"), 6, 0)
+        layout.addWidget(numEntry, 6, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'A': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(v_v)
+        layout.addWidget(QLabel("Vehicle Speed (m/s):"), 7, 0)
+        layout.addWidget(numEntry, 7, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update({'v_v': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(total_length_of_drive_cycle)
+        layout.addWidget(QLabel("Total length of drive cycle:"), 8, 0)
+        layout.addWidget(numEntry, 8, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update(
+                {'total_length_of_drive_cycle': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(auxilliary_energy)
+        layout.addWidget(QLabel("Auxilliary Energy:"), 9, 0)
+        layout.addWidget(numEntry, 9, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update(
+                {'auxilliary_energy': text})
+        )
+
+        
+        numEntry = QSpinBox(self)
+        numEntry.setValue(efficiency_of_the_powertrain)
+        layout.addWidget(QLabel("Efficiency of the powertrain:"), 10, 0)
+        layout.addWidget(numEntry, 10, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update(
+                {'efficiency_of_the_powertrain': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue(vehicle_drive_range)
+        layout.addWidget(QLabel("Vehicle Drive Range:"), 11, 0)
+        layout.addWidget(numEntry, 11, 1)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update(
+                {'vehicle_drive_range': text})
+        )
+
+        self.horizontalGroupBox.setLayout(layout)
+
+
+    def createGridLayout2(self):
+        self.horizontalGroupBox2 = QGroupBox("Battery Parameters")
+        layout = QGridLayout()
+        layout.setColumnStretch(5, 8)
+        layout.setColumnStretch(6, 8)
+
+        layout.addWidget(QPushButton('1'), 0, 0)
+        comboEntry = QComboBox()
+        comboEntry.addItems(["Type 1", "Type 2", "Type 3"])
+        layout.addWidget(QLabel("Options:"), 0, 0)
+        layout.addWidget(comboEntry, 0, 10)
+        comboEntry.editTextChanged.connect(
+            lambda text: self.data.update(
+                {'index': text})
+        )
+
+        numEntry = QSpinBox(self)
+        numEntry.setValue()
+        layout.addWidget(QLabel("Battery Cell Capacity:"), 1, 0)
+        layout.addWidget(numEntry, 1, 10)
+        numEntry.valueChanged.connect(
+            lambda text: self.data.update(
+                {'vehicle_drive_range': text})
+        )
+        
+        self.horizontalGroupBox2.setLayout(layout)
+
+
+def total_energy_consumed_integrand(t, m_v, a_v, alpha_s, c_rr, c_d, rho, A, v_v):
+    # converts degrees to rad
+    def degree_to_radian(deg): return deg * pi / 180
+    return (m_v * a_v) + (m_v * g * (alpha_s)) + (m_v * g * cos(degree_to_radian(alpha_s)) * c_rr) + (0.5 * c_d * rho * A * v_v**2)
+
+
+def getMinimum(m_v, a_v, alpha_s, c_rr, c_d, rho, A, v_v):
+    total_energy_consumed = quad(total_energy_consumed_integrand, 0, 10, args=(
+        m_v, a_v, alpha_s, c_rr, c_d, rho, A, v_v))[0]
+
+    # battery pack energy
+    battery_pack_energy = [
+        ((total_energy_consumed / total_length_of_drive_cycle) + auxilliary_energy) *
+        (2 - efficiency_of_the_powertrain) * vehicle_drive_range * (battery_cell_capacity[i]) *
+        (battery_cell_voltage[i]) for i in range(length_of_battery_options)
+    ]
+
+    # total number of cells in battery pack
+    total_number_of_cells_in_battery_pack = [
+        battery_pack_energy[i] / (battery_cell_capacity[i] * battery_cell_voltage[i]) for i in range(length_of_battery_options)
+    ]
+
+    total_battery_cost = [
+        total_number_of_cells_in_battery_pack[i] * battery_cost[i] for i in range(length_of_battery_options)
+    ]
+
+    # find the min cost
+    minimum_battery_cost = optimal_index = None
+    for i in range(length_of_battery_options):
+        if total_energy_consumed > battery_pack_energy[i]:
+            continue
+
+        if minimum_battery_cost is None:
+            minimum_battery_cost = total_battery_cost[i]
+            optimal_index = i
+
+        elif minimum_battery_cost > total_battery_cost[i]:
+            minimum_battery_cost = total_battery_cost[i]
+            optimal_index = i
+
+    if optimal_index is not None:
+        # battery pack mass
+        m_bp = battery_pack_energy[optimal_index] / (battery_cell_capacity[optimal_index] *
+                                                     battery_cell_voltage[optimal_index]) * battery_cell_mass[optimal_index]
+
+        # battery pack capacity
+        C_bp = (total_number_of_cells_in_battery_pack[optimal_index] *
+                battery_cell_voltage[optimal_index] * battery_cell_capacity[optimal_index]) / \
+            battery_nominal_voltage[optimal_index]
+
+        # volume of battery cell
+        volume_of_battery_pack = total_number_of_cells_in_battery_pack[optimal_index] * \
+            volume_of_battery_cell[optimal_index]
+
+        print(
+            'optimal type is Type {}: cost = {:,.4f}, energy = {:,.4f}'.format(
+                optimal_index +
+                1, minimum_battery_cost, battery_pack_energy[optimal_index]
+            )
+        )
+        print(total_battery_cost)
+        print(battery_pack_energy)
+
+        plt.subplot(211)
+        plt.title('Battery Pack Cost')
+        plt.bar(range(1, length_of_battery_options+1), total_battery_cost)
+
+        plt.subplot(212)
+        plt.title('Battery Pack Energy')
+        plt.bar(range(1, length_of_battery_options+1), battery_pack_energy)
+        plt.show()
+
+    else:
+        print('No suitable choice found!')
+
+
+# show all plots
+plt.show()
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = App()
+    sys.exit(app.exec_())

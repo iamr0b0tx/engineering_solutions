@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d9343a23-4984-4350-845a-db873fee5373" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="WindTurbine.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Libraries/WindTurbine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dashboard.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dashboard.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3995">
+              <caret line="3700" selection-start-line="3700" selection-end-line="3700" />
+              <folding>
+                <element signature="e#266#308#0" expanded="true" />
+                <element signature="e#1033#150199#0" />
+                <element signature="e#150250#184247#0" />
+                <element signature="e#184283#186407#0" />
+                <element signature="e#186466#187728#0" />
+                <element signature="e#187774#189646#0" />
+                <element signature="e#189704#190669#0" />
+                <element signature="e#190741#191624#0" />
+                <element signature="e#191693#191852#0" />
+                <element signature="e#191922#192937#0" />
+                <element signature="e#193047#202184#0" />
+                <element signature="e#202238#202401#0" />
+                <element signature="e#202463#202666#0" />
+                <element signature="e#202716#202859#0" />
+                <element signature="e#202977#203731#0" />
+                <element signature="e#203796#204062#0" />
+                <element signature="e#204115#206082#0" />
+                <element signature="e#206118#206527#0" />
+                <element signature="e#206587#206893#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="103">
+              <caret line="118" column="29" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="29" />
+              <folding>
+                <element signature="e#460#5298#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wt_tip_speed_pow_coff.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JSON files/wt_tip_speed_pow_coff.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>eff</find>
+      <find>annual energy</find>
+      <find>site</find>
+      <find>site_data['area']</find>
+      <find>f_tem</find>
+      <find>(0, 0</find>
+      <find>['heat_gained']</find>
+      <find>CoolingLoad.heat_</find>
+      <find>pprint</find>
+      <find>ann</find>
+      <find>total_pv_mod</find>
+      <find>n_pv_per_wing</find>
+      <find>actual</find>
+      <find>wings</find>
+      <find>f_temp</find>
+      <find>f_man</find>
+      <find>f_dir</find>
+      <find>eff_inverter</find>
+      <find>eff_dc_cables</find>
+      <find>psh_average</find>
+      <find>insola</find>
+      <find>insolation</find>
+      <find>return insolation</find>
+      <find>tip_speed_pow_coff</find>
+      <find>Load_sav</find>
+      <find>name_changed</find>
+      <find>eer</find>
+      <find>cop</find>
+      <find>Error Analyze Action</find>
+      <find>wt</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Multiple_app_select.py" />
+        <option value="$PROJECT_DIR$/popup_office(2).py" />
+        <option value="$PROJECT_DIR$/JSON files/cl_space_dict.json" />
+        <option value="$PROJECT_DIR$/popup_office3.py" />
+        <option value="$PROJECT_DIR$/popup_office4.py" />
+        <option value="$PROJECT_DIR$/popup_office5.py" />
+        <option value="$PROJECT_DIR$/JSON files/default_cl_data.json" />
+        <option value="$PROJECT_DIR$/popup_office6.py" />
+        <option value="$PROJECT_DIR$/Dashboard(2).py" />
+        <option value="$PROJECT_DIR$/Dashboard 1.py" />
+        <option value="$PROJECT_DIR$/JSON files/ds.json" />
+        <option value="$PROJECT_DIR$/test_graph.py" />
+        <option value="$PROJECT_DIR$/Test_2.py" />
+        <option value="$PROJECT_DIR$/test3.py" />
+        <option value="$PROJECT_DIR$/Dashboard (2).py" />
+        <option value="$PROJECT_DIR$/popup_office2.py" />
+        <option value="$PROJECT_DIR$/popup_office_2.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/popup_office.py" />
+        <option value="$PROJECT_DIR$/dashboard (2).py" />
+        <option value="$PROJECT_DIR$/add_appliance2.py" />
+        <option value="$PROJECT_DIR$/appliance_popup2.py" />
+        <option value="$PROJECT_DIR$/multiple_app_select.py" />
+        <option value="$PROJECT_DIR$/Dashboard3.py" />
+        <option value="$PROJECT_DIR$/Dashboard4.py" />
+        <option value="$PROJECT_DIR$/testgraph.py" />
+        <option value="$PROJECT_DIR$/cl_popup2.py" />
+        <option value="$PROJECT_DIR$/appliance_popup.py" />
+        <option value="$PROJECT_DIR$/JSON files/quikie.py" />
+        <option value="$PROJECT_DIR$/JSON files/ds1.json" />
+        <option value="$PROJECT_DIR$/Dashboard5.py" />
+        <option value="$PROJECT_DIR$/Dashboard2.py" />
+        <option value="$PROJECT_DIR$/JSON files/appliances.json" />
+        <option value="$PROJECT_DIR$/JSON files/quickie2.py" />
+        <option value="$PROJECT_DIR$/JSON files/retrofit_appliances.json" />
+        <option value="$PROJECT_DIR$/add_appliance.py" />
+        <option value="$PROJECT_DIR$/Optimization/another.py" />
+        <option value="$PROJECT_DIR$/Optimization/testscript.py" />
+        <option value="$PROJECT_DIR$/RegressionAnalysis.py" />
+        <option value="$PROJECT_DIR$/Regression Analysis/Cooling Load.py" />
+        <option value="$PROJECT_DIR$/Regression Analysis/CoolingLoad.py" />
+        <option value="$PROJECT_DIR$/Libraries/SolarPV.py" />
+        <option value="$PROJECT_DIR$/Regression Analysis/SolarPV.py" />
+        <option value="$PROJECT_DIR$/Regression Analysis/WindTurb.py" />
+        <option value="$PROJECT_DIR$/Libraries/ApplianceAudit.py" />
+        <option value="$PROJECT_DIR$/Libraries/CoolingLoadAnalysis.py" />
+        <option value="$PROJECT_DIR$/Main_App.py" />
+        <option value="$PROJECT_DIR$/cl_popup.py" />
+        <option value="$PROJECT_DIR$/start.py" />
+        <option value="$PROJECT_DIR$/Dashboard.py" />
+        <option value="$PROJECT_DIR$/Libraries/WindTurbine.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Energhx Plus 1.0 (Code)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Energhx Plus 1.0 (Code)" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Energhx Plus 1.0 (Code)" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Energhx Plus 1.0 (Code)" type="462c0819:PsiDirectoryNode" />
+              <item name="Libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aderoju peter\Desktop\Energhx Plus 1.0\Energhx Plus 1.0 (Code)\JSON files" />
+      <recent name="C:\Users\lollypop.OLOLADE\Desktop\Energy Audit APP\Code 2.0\Libraries" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.start">
+    <configuration name="Dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Code 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dashboard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Main_App" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Code 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main_App.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="SolarPV" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Code 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Libraries" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Libraries/SolarPV.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="WindTurbine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Code 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Libraries" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Libraries/WindTurbine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="popup_office6" type="PythonConfigurationType" factoryName="Python">
+      <module name="Code 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/popup_office6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Code 2.0" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.popup_office6" />
+      <item itemvalue="Python.Dashboard" />
+      <item itemvalue="Python.start" />
+      <item itemvalue="Python.Main_App" />
+      <item itemvalue="Python.SolarPV" />
+      <item itemvalue="Python.WindTurbine" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.start" />
+        <item itemvalue="Python.WindTurbine" />
+        <item itemvalue="Python.Dashboard" />
+        <item itemvalue="Python.SolarPV" />
+        <item itemvalue="Python.Main_App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d9343a23-4984-4350-845a-db873fee5373" name="Default" comment="" />
+      <created>1537504294873</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537504294873</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1845238" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32817337" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.40402478" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32817337" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39933994" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="137" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+          <folding>
+            <element signature="e#460#5298#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/WindTurbine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main_App.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#460#5298#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dashboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#266#308#0" expanded="true" />
+            <element signature="e#1033#150199#0" />
+            <element signature="e#150250#184247#0" />
+            <element signature="e#184283#186407#0" />
+            <element signature="e#186466#187728#0" />
+            <element signature="e#187774#189646#0" />
+            <element signature="e#189704#190669#0" />
+            <element signature="e#190741#191624#0" />
+            <element signature="e#191693#191852#0" />
+            <element signature="e#191922#192937#0" />
+            <element signature="e#193047#202184#0" />
+            <element signature="e#202238#202401#0" />
+            <element signature="e#202463#202666#0" />
+            <element signature="e#202716#202859#0" />
+            <element signature="e#202977#203731#0" />
+            <element signature="e#203796#204062#0" />
+            <element signature="e#204115#206082#0" />
+            <element signature="e#206118#206527#0" />
+            <element signature="e#206587#206893#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Random Data generating script for Regression/WindTurb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dashboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51442">
+          <caret line="3026" column="56" selection-start-line="3026" selection-start-column="56" selection-end-line="3026" selection-end-column="56" />
+          <folding>
+            <element signature="e#266#308#0" expanded="true" />
+            <element signature="e#1033#150199#0" />
+            <element signature="e#150250#184247#0" />
+            <element signature="e#184283#186407#0" />
+            <element signature="e#186466#187728#0" />
+            <element signature="e#187774#189646#0" />
+            <element signature="e#189704#190669#0" />
+            <element signature="e#190741#191624#0" />
+            <element signature="e#191693#191852#0" />
+            <element signature="e#191922#192937#0" />
+            <element signature="e#193047#202184#0" />
+            <element signature="e#202238#202401#0" />
+            <element signature="e#202463#202666#0" />
+            <element signature="e#202716#202859#0" />
+            <element signature="e#202977#203731#0" />
+            <element signature="e#203796#204062#0" />
+            <element signature="e#204115#206082#0" />
+            <element signature="e#206118#206527#0" />
+            <element signature="e#206587#206893#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/encoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard (2).py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-2054700390/PyQt5/QtWidgets/__init__.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="354" selection-start-line="354" selection-end-line="354" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_appliance2.py" />
+    <entry file="file://$PROJECT_DIR$/appliance_popup2.py" />
+    <entry file="file://$PROJECT_DIR$/Dashboard3.py" />
+    <entry file="file://$PROJECT_DIR$/Dashboard4.py" />
+    <entry file="file://$PROJECT_DIR$/testgraph.py" />
+    <entry file="file://$PROJECT_DIR$/popup_office.py" />
+    <entry file="file://$PROJECT_DIR$/cl_popup2.py" />
+    <entry file="file://$PROJECT_DIR$/JSON files/default_cl_data" />
+    <entry file="file://$PROJECT_DIR$/JSON files/default_cl_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_data.json" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-2054700390/PyQt5/QtWidgets/QLineEdit.py" />
+    <entry file="file://$PROJECT_DIR$/JSON files/ds1.json" />
+    <entry file="file://$PROJECT_DIR$/Dashboard5.py" />
+    <entry file="file://$PROJECT_DIR$/Dashboard2.py" />
+    <entry file="file://$PROJECT_DIR$/JSON files/quikie.py" />
+    <entry file="file://$PROJECT_DIR$/appliance_popup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2500">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON files/quickie2.py" />
+    <entry file="file://$PROJECT_DIR$/Optimization/testscript.py" />
+    <entry file="file://$PROJECT_DIR$/RegressionAnalysis.py" />
+    <entry file="file://$PROJECT_DIR$/project.json" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Regression Analysis/ApplianceAudit.py" />
+    <entry file="file://$PROJECT_DIR$/Regression Analysis/CoolingLoad.py" />
+    <entry file="file://$PROJECT_DIR$/Regression Analysis/SolarPV.py" />
+    <entry file="file://$PROJECT_DIR$/Regression Analysis/WindTurb.py" />
+    <entry file="file://$PROJECT_DIR$/Optimization/another.py" />
+    <entry file="file://$PROJECT_DIR$/JSON files/appliances.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON files/retrofit_appliances.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3094">
+          <caret line="182" column="14" selection-start-line="182" selection-start-column="14" selection-end-line="182" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON files/sp_inverter_spec.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Random Data generating script for Regression/WindTurb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_appliance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main_App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63631">
+          <caret line="3758" column="15" selection-start-line="3758" selection-start-column="12" selection-end-line="3758" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl_popup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23001">
+          <caret line="1356" column="69" selection-start-line="1356" selection-start-column="69" selection-end-line="1356" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/SolarPV.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dashboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3995">
+          <caret line="3700" selection-start-line="3700" selection-end-line="3700" />
+          <folding>
+            <element signature="e#266#308#0" expanded="true" />
+            <element signature="e#1033#150199#0" />
+            <element signature="e#150250#184247#0" />
+            <element signature="e#184283#186407#0" />
+            <element signature="e#186466#187728#0" />
+            <element signature="e#187774#189646#0" />
+            <element signature="e#189704#190669#0" />
+            <element signature="e#190741#191624#0" />
+            <element signature="e#191693#191852#0" />
+            <element signature="e#191922#192937#0" />
+            <element signature="e#193047#202184#0" />
+            <element signature="e#202238#202401#0" />
+            <element signature="e#202463#202666#0" />
+            <element signature="e#202716#202859#0" />
+            <element signature="e#202977#203731#0" />
+            <element signature="e#203796#204062#0" />
+            <element signature="e#204115#206082#0" />
+            <element signature="e#206118#206527#0" />
+            <element signature="e#206587#206893#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON files/wt_tip_speed_pow_coff.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="118" column="29" selection-start-line="118" selection-start-column="27" selection-end-line="118" selection-end-column="29" />
+          <folding>
+            <element signature="e#460#5298#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Libraries/WindTurbine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

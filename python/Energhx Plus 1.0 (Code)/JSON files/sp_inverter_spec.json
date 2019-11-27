@@ -1,0 +1,18 @@
+{
+    "TABUCHI ELECTRIC EPW-T250P6-US": {
+        "type": "mono-crystalline, 3 bus bar",
+        "max_inp_volt": "1000",
+        "mppt_volt_range_u": "500",
+        "mppt_volt_range_l": "800",
+        "mppt_units": 6,
+        "eff": "97.6"
+    },
+    "New Inverter": {
+        "type": "mono-crystalline, 3 bus bar",
+        "max_inp_volt": 45.0,
+        "mppt_volt_range_u": 54.0,
+        "mppt_volt_range_l": 32.0,
+        "mppt_units": 10,
+        "eff": 86.0
+    }
+}

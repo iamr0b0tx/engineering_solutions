@@ -1,0 +1,3352 @@
+{
+    "rooms": {
+        "Room277": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 12
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 18
+                        },
+                        "glass": {
+                            "north": 12.96,
+                            "east": 12.96,
+                            "south": 6.48,
+                            "west": 12.96
+                        },
+                        "walls": {
+                            "north": 26.82,
+                            "east": 26.82,
+                            "south": 33.3,
+                            "west": 26.82
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 67,
+                                "women": 18
+                            },
+                            "glass": {
+                                "north": 12.96,
+                                "east": 12.96,
+                                "south": 6.48,
+                                "west": 12.96
+                            },
+                            "walls": {
+                                "north": 26.82,
+                                "east": 26.82,
+                                "south": 33.3,
+                                "west": 26.82
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 12
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 116249.69743951639,
+                    "cl_tons": 9.687474786626366,
+                    "eer": 33.1,
+                    "cop": 10.98857727939288,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 255": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 6.48,
+                            "east": 12.96,
+                            "south": 12.96,
+                            "west": 12.96
+                        },
+                        "walls": {
+                            "north": 33.3,
+                            "east": 26.82,
+                            "south": 26.82,
+                            "west": 26.82
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 66,
+                                "women": 24
+                            },
+                            "glass": {
+                                "north": 6.48,
+                                "east": 12.96,
+                                "south": 12.96,
+                                "west": 12.96
+                            },
+                            "walls": {
+                                "north": 33.3,
+                                "east": 26.82,
+                                "south": 26.82,
+                                "west": 26.82
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 118260.26008186495,
+                    "cl_tons": 9.855021673488746,
+                    "eer": 33.7,
+                    "cop": 11.178627003883584,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 256": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 12.96,
+                            "east": 12.96,
+                            "south": 12.96,
+                            "west": 6.48
+                        },
+                        "walls": {
+                            "north": 26.82,
+                            "east": 26.82,
+                            "south": 33.3,
+                            "west": 26.82
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 79,
+                                "women": 13
+                            },
+                            "glass": {
+                                "north": 12.96,
+                                "east": 12.96,
+                                "south": 12.96,
+                                "west": 6.48
+                            },
+                            "walls": {
+                                "north": 26.82,
+                                "east": 26.82,
+                                "south": 33.3,
+                                "west": 26.82
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 118619.3631259389,
+                    "cl_tons": 9.884946927161575,
+                    "eer": 33.8,
+                    "cop": 11.212571449658375,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 257": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 12.96,
+                            "east": 12.96,
+                            "south": 6.48,
+                            "west": 6.48
+                        },
+                        "walls": {
+                            "north": 26.82,
+                            "east": 26.82,
+                            "south": 33.3,
+                            "west": 26.82
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 80,
+                                "women": 10
+                            },
+                            "glass": {
+                                "north": 12.96,
+                                "east": 12.96,
+                                "south": 6.48,
+                                "west": 6.48
+                            },
+                            "walls": {
+                                "north": 26.82,
+                                "east": 26.82,
+                                "south": 33.3,
+                                "west": 26.82
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 116685.08419278561,
+                    "cl_tons": 9.723757016065468,
+                    "eer": 33.2,
+                    "cop": 11.029732491751279,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 263": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 12.96,
+                            "east": 12.96,
+                            "south": 6.48,
+                            "west": 12.96
+                        },
+                        "walls": {
+                            "north": 26.82,
+                            "east": 26.82,
+                            "south": 33.3,
+                            "west": 26.82
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 58,
+                                "women": 30
+                            },
+                            "glass": {
+                                "north": 12.96,
+                                "east": 12.96,
+                                "south": 6.48,
+                                "west": 12.96
+                            },
+                            "walls": {
+                                "north": 26.82,
+                                "east": 26.82,
+                                "south": 33.3,
+                                "west": 26.82
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 117580.43281951638,
+                    "cl_tons": 9.798369401626365,
+                    "eer": 33.49869880897903,
+                    "cop": 11.114365895480766,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 203": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 6.48,
+                            "east": 12.96,
+                            "south": 12.96,
+                            "west": 12.96
+                        },
+                        "walls": {
+                            "north": 33.3,
+                            "east": 26.82,
+                            "south": 26.82,
+                            "west": 26.82
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 70,
+                                "women": 27
+                            },
+                            "glass": {
+                                "north": 6.48,
+                                "east": 12.96,
+                                "south": 12.96,
+                                "west": 12.96
+                            },
+                            "walls": {
+                                "north": 33.3,
+                                "east": 26.82,
+                                "south": 26.82,
+                                "west": 26.82
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 121365.30930186497,
+                    "cl_tons": 10.113775775155414,
+                    "eer": 34.6,
+                    "cop": 11.472133774755317,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 269": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 12.96,
+                            "east": 12.96,
+                            "south": 12.96,
+                            "west": 6.48
+                        },
+                        "walls": {
+                            "north": 26.82,
+                            "east": 26.82,
+                            "south": 26.82,
+                            "west": 33.3
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 85,
+                                "women": 5
+                            },
+                            "glass": {
+                                "north": 12.96,
+                                "east": 12.96,
+                                "south": 12.96,
+                                "west": 6.48
+                            },
+                            "walls": {
+                                "north": 26.82,
+                                "east": 26.82,
+                                "south": 26.82,
+                                "west": 33.3
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 117732.2062059389,
+                    "cl_tons": 9.811017183828241,
+                    "eer": 33.541939090011084,
+                    "cop": 11.128712372266452,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 270": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 6
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 405.76,
+                        "people": {
+                            "men": 70,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 12.96,
+                            "east": 6.48,
+                            "south": 12.96,
+                            "west": 0.0
+                        },
+                        "walls": {
+                            "north": 26.82,
+                            "east": 33.3,
+                            "south": 26.82,
+                            "west": 39.78
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 9,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 405.76,
+                            "people": {
+                                "men": 60,
+                                "women": 17
+                            },
+                            "glass": {
+                                "north": 12.96,
+                                "east": 6.48,
+                                "south": 12.96,
+                                "west": 0.0
+                            },
+                            "walls": {
+                                "north": 26.82,
+                                "east": 33.3,
+                                "south": 26.82,
+                                "west": 39.78
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 6
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 108974.95555710432,
+                    "cl_tons": 9.081246296425359,
+                    "eer": 31.0,
+                    "cop": 10.300927632785305,
+                    "rating": 5
+                }
+            }
+        },
+        "LT 001": {
+            "room_type": "LABORATORIES",
+            "button": "btn_add_laboratory",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 18,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 90,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 12
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 10,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 12,
+                    "operating_hours": 12
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 136.16,
+                        "people": {
+                            "men": 35,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 6.57,
+                            "east": 0.0,
+                            "south": 18.53,
+                            "west": 0.0
+                        },
+                        "walls": {
+                            "north": 28.89,
+                            "east": 7.68,
+                            "south": 16.93,
+                            "west": 7.68
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 18,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 55,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 12
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 10,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 136.16,
+                            "people": {
+                                "men": 90,
+                                "women": 70
+                            },
+                            "glass": {
+                                "north": 6.57,
+                                "east": 0.0,
+                                "south": 18.53,
+                                "west": 0.0
+                            },
+                            "walls": {
+                                "north": 28.89,
+                                "east": 7.68,
+                                "south": 16.93,
+                                "west": 7.68
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 18,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 90,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 12
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 10,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 12,
+                            "operating_hours": 12
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 222158.5634656574,
+                    "cl_tons": 18.513213622138117,
+                    "eer": 63.3,
+                    "cop": 20.99968083092363,
+                    "rating": 5
+                }
+            }
+        },
+        "LT 002": {
+            "room_type": "LABORATORIES",
+            "button": "btn_add_laboratory",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 18,
+                    "operating_hours": 12
+                },
+                "Laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                },
+                "Projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 8
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 10,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 12,
+                    "operating_hours": 4
+                }
+            },
+            "cooling_load": {
+                "room_det": {
+                    "ac_units": 7,
+                    "weather": {
+                        "indoor": {
+                            "dry_bulb": 10.0,
+                            "humidity": 25.6
+                        },
+                        "outdoor": {
+                            "dry_bulb": 33.6,
+                            "humidity": 17.43
+                        }
+                    },
+                    "level_activity": "Moderately active work (office)",
+                    "type_space": "Class Room",
+                    "heat_gained": {
+                        "infiltration_rate": 0.3,
+                        "height": 136.16,
+                        "people": {
+                            "men": 35,
+                            "women": 20
+                        },
+                        "glass": {
+                            "north": 6.57,
+                            "east": 0.0,
+                            "south": 18.53,
+                            "west": 0.0
+                        },
+                        "walls": {
+                            "north": 28.89,
+                            "east": 7.68,
+                            "south": 16.93,
+                            "west": 7.68
+                        },
+                        "roof": {
+                            "floor_area": 104.4
+                        }
+                    }
+                },
+                "constants": {
+                    "th_walls": {
+                        "concrete": {
+                            "length": 8.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster_in": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "plaster_out": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.04
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 0.12
+                        }
+                    },
+                    "th_roof": {
+                        "concrete": {
+                            "length": 20.0,
+                            "conductivity": 1.73
+                        },
+                        "plaster": {
+                            "length": 12.5,
+                            "conductivity": 8.65
+                        },
+                        "outside_film": {
+                            "length": 1.0,
+                            "conductivity": 9.4
+                        },
+                        "inside_film": {
+                            "length": 1.0,
+                            "conductivity": 6.3
+                        }
+                    },
+                    "th_glass": 6.12,
+                    "scl": {
+                        "north": 15.76,
+                        "east": 15.76,
+                        "south": 5.51,
+                        "west": 46.07
+                    },
+                    "sc": {
+                        "north": 0.82,
+                        "east": 0.82,
+                        "south": 0.82,
+                        "west": 0.82
+                    },
+                    "cltd": {
+                        "walls": {
+                            "north": 3.0,
+                            "east": 3.0,
+                            "south": 42.7,
+                            "west": 42.7
+                        },
+                        "glass": {
+                            "north": 7.0,
+                            "east": 7.0,
+                            "south": 7.0,
+                            "west": 7.0
+                        },
+                        "roof": 30.83
+                    }
+                },
+                "appliances": {
+                    "Lightning (Fluorescent)": {
+                        "power_rating": 18.0,
+                        "units": 18,
+                        "operating_hours": 12
+                    },
+                    "Laptop": {
+                        "power_rating": 45.0,
+                        "units": 50,
+                        "operating_hours": 12
+                    },
+                    "Projector": {
+                        "power_rating": 154.0,
+                        "units": 1,
+                        "operating_hours": 8
+                    }
+                },
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 10,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 136.16,
+                            "people": {
+                                "men": 95,
+                                "women": 75
+                            },
+                            "glass": {
+                                "north": 6.57,
+                                "east": 0.0,
+                                "south": 18.53,
+                                "west": 0.0
+                            },
+                            "walls": {
+                                "north": 28.89,
+                                "east": 7.68,
+                                "south": 16.93,
+                                "west": 7.68
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 18,
+                            "operating_hours": 12
+                        },
+                        "Laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        },
+                        "Projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 8
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 10,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 12,
+                            "operating_hours": 4
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 218405.20726565743,
+                    "cl_tons": 18.200433938804785,
+                    "eer": 62.2,
+                    "cop": 20.644892426573186,
+                    "rating": 5
+                }
+            }
+        },
+        "Room 271": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 18.0,
+                    "units": 9,
+                    "operating_hours": 12
+                },
+                "Electric Fan": {
+                    "power_rating": 70.0,
+                    "units": 6,
+                    "operating_hours": 12
+                },
+                "AC": {
+                    "power_rating": 3510.0,
+                    "units": 4,
+                    "operating_hours": 12
+                },
+                "projector": {
+                    "power_rating": 154.0,
+                    "units": 1,
+                    "operating_hours": 12
+                },
+                "laptop": {
+                    "power_rating": 60.0,
+                    "units": 50,
+                    "operating_hours": 12
+                }
+            },
+            "cooling_load": {
+                "saved_data": {
+                    "room_det": {
+                        "ac_units": 4,
+                        "weather": {
+                            "indoor": {
+                                "dry_bulb": 10.0,
+                                "humidity": 25.6
+                            },
+                            "outdoor": {
+                                "dry_bulb": 33.6,
+                                "humidity": 17.43
+                            }
+                        },
+                        "level_activity": "Moderately active work (office)",
+                        "type_space": "Class Room",
+                        "heat_gained": {
+                            "infiltration_rate": 0.3,
+                            "height": 136.16,
+                            "people": {
+                                "men": 45,
+                                "women": 25
+                            },
+                            "glass": {
+                                "north": 6.57,
+                                "east": 0.0,
+                                "south": 18.53,
+                                "west": 0.0
+                            },
+                            "walls": {
+                                "north": 28.89,
+                                "east": 7.68,
+                                "south": 16.93,
+                                "west": 7.68
+                            },
+                            "roof": {
+                                "floor_area": 104.4
+                            }
+                        }
+                    },
+                    "constants": {
+                        "th_walls": {
+                            "concrete": {
+                                "length": 8.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster_in": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "plaster_out": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.04
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 0.12
+                            }
+                        },
+                        "th_roof": {
+                            "concrete": {
+                                "length": 20.0,
+                                "conductivity": 1.73
+                            },
+                            "plaster": {
+                                "length": 12.5,
+                                "conductivity": 8.65
+                            },
+                            "outside_film": {
+                                "length": 1.0,
+                                "conductivity": 9.4
+                            },
+                            "inside_film": {
+                                "length": 1.0,
+                                "conductivity": 6.3
+                            }
+                        },
+                        "th_glass": 6.12,
+                        "scl": {
+                            "north": 15.76,
+                            "east": 15.76,
+                            "south": 5.51,
+                            "west": 46.07
+                        },
+                        "sc": {
+                            "north": 0.82,
+                            "east": 0.82,
+                            "south": 0.82,
+                            "west": 0.82
+                        },
+                        "cltd": {
+                            "walls": {
+                                "north": 3.0,
+                                "east": 3.0,
+                                "south": 42.7,
+                                "west": 42.7
+                            },
+                            "glass": {
+                                "north": 7.0,
+                                "east": 7.0,
+                                "south": 7.0,
+                                "west": 7.0
+                            },
+                            "roof": 30.83
+                        }
+                    },
+                    "appliances": {
+                        "Lightning (Fluorescent)": {
+                            "power_rating": 18.0,
+                            "units": 9,
+                            "operating_hours": 12
+                        },
+                        "Electric Fan": {
+                            "power_rating": 70.0,
+                            "units": 6,
+                            "operating_hours": 12
+                        },
+                        "AC": {
+                            "power_rating": 3510.0,
+                            "units": 4,
+                            "operating_hours": 12
+                        },
+                        "projector": {
+                            "power_rating": 154.0,
+                            "units": 1,
+                            "operating_hours": 12
+                        },
+                        "laptop": {
+                            "power_rating": 60.0,
+                            "units": 50,
+                            "operating_hours": 12
+                        }
+                    }
+                },
+                "result": {
+                    "cl_btu": 100091.23070085741,
+                    "cl_tons": 8.340935891738118,
+                    "eer": 28.51602014269442,
+                    "cop": 9.461187837655746,
+                    "rating": 5
+                }
+            }
+        }
+    },
+    "retrofit": {
+        "Lightning (Fluorescent)": 4,
+        "Laptop": {
+            "index": 6,
+            "value": 45.0,
+            "name": "LAP",
+            "custom": true
+        },
+        "Projector": {
+            "index": 6,
+            "value": 154.0,
+            "name": "",
+            "custom": true
+        },
+        "AC": {
+            "index": 6,
+            "value": 0.0,
+            "name": "AC",
+            "custom": true
+        },
+        "Electric Fan": 3,
+        "projector": {
+            "index": 6,
+            "value": 0.0,
+            "name": "",
+            "custom": true
+        },
+        "laptop": {
+            "index": 6,
+            "value": 0.0,
+            "name": "",
+            "custom": true
+        }
+    },
+    "solar_pv": {
+        "site_data": {
+            "name": "UNILAG",
+            "data": {
+                "installation_type": "Fixed Grid-Tied",
+                "site": "roof of building",
+                "latitude": 6.52,
+                "longitude": 3.39,
+                "elevation": 45.0,
+                "no_wings": 88,
+                "area": 28.89,
+                "pitch": 21
+            }
+        },
+        "module_data": {
+            "name": "ECLIPSAL NRG72 310M",
+            "data": {
+                "cell_type": "mono-crystalline, 3 bus bar",
+                "rated power": 310.0,
+                "max_p_volt": 36.78,
+                "max_p_cur": 8.43,
+                "open_c_vol": 45.12,
+                "short_c_cur": 8.92,
+                "fuse_rating": 15.0,
+                "max_sys_volt": 1000.0,
+                "op_temp_l": 86.0,
+                "op_temp_u": -40.0,
+                "pow_tol_l": 0.0,
+                "pow_tol_u": 2.0,
+                "Temp Coeff": {
+                    "temp_coeff_p": -0.484,
+                    "temp_coeff_v": -0.363,
+                    "temp_coeff_i": -0.047
+                },
+                "mod_dim": {
+                    "length": 1.983,
+                    "breadth": 0.997,
+                    "height": 0.042
+                },
+                "mod_eff": 17.0,
+                "weight": 25.0
+            }
+        },
+        "inverter_data": {
+            "name": "TABUCHI ELECTRIC EPW-T250P6-US",
+            "data": {
+                "type": "mono-crystalline, 3 bus bar",
+                "max_inp_volt": 1000.0,
+                "mppt_volt_range_u": 500.0,
+                "mppt_volt_range_l": 800.0,
+                "mppt_units": 6,
+                "eff": 97.6
+            }
+        },
+        "constants": {
+            "data": {
+                "amb_temp": 30.0,
+                "tolerance": 0.05,
+                "dirt_loss": 0.04,
+                "assumed_dc_loss": 0.03,
+                "assumed_ac_loss": 0.01,
+                "temp_effect": 0.03,
+                "safety_marg": 0.1,
+                "eff_cell_temp": 15.0,
+                "months": [
+                    "jan",
+                    "feb",
+                    "mar",
+                    "apr",
+                    "may",
+                    "jun",
+                    "jul",
+                    "aug",
+                    "sept",
+                    "oct",
+                    "nov",
+                    "dec"
+                ]
+            }
+        }
+    },
+    "wind_turbine": {
+        "site_data": {
+            "name": "Unilag",
+            "data": {
+                "location": {
+                    "lat": 6.35,
+                    "long": 3.2
+                },
+                "air_data": {
+                    "air_density": 1.2205,
+                    "temp": 27.0,
+                    "altitude": 39.0,
+                    "pressure": 4.0
+                },
+                "wind_dist_data": {
+                    "w_shape_param": 3.2,
+                    "w_scale_param": 5.0,
+                    "velocity": 4.3,
+                    "height": 10.0
+                }
+            }
+        },
+        "turbine": {
+            "name": "Hitatchi Wind Turbine",
+            "data": {
+                "rated_power": 2000.0,
+                "cut_in_wind_speed": 4.0,
+                "cut_out_wind_speed": 25.0,
+                "rotor_diameter": 80.0,
+                "hub_height": 78.0,
+                "units": 4,
+                "blade_length": 39.0,
+                "no_blades": 3
+            }
+        }
+    }
+}

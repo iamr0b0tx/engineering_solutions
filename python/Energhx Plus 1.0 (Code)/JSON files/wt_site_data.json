@@ -1,0 +1,56 @@
+{
+    "Unilag": {
+        "air_data": {
+            "air_density": 1.2205,
+            "temp": 27,
+            "altitude": 39,
+            "pressure": 4
+        },
+        "wind_dist_data": {
+            "w_shape_param": 3.2,
+            "velocity": 4.3,
+            "w_scale_param": 5.0,
+            "height": 10
+        },
+        "location": {
+            "lat": 6.35,
+            "long": 3.2
+        }
+    },
+    "Ibafo": {
+        "air_data": {
+            "air_density": 1.2205,
+            "temp": 27,
+            "altitude": 39,
+            "pressure": 4
+        },
+        "wind_dist_data": {
+            "w_shape_param": 3.2,
+            "velocity": 4.3,
+            "w_scale_param": 5.0,
+            "height": 10
+        },
+        "location": {
+            "lat": 6.35,
+            "long": 3.2
+        }
+    },
+    "UNILAG": {
+        "air_data": {
+            "air_density": 298.15,
+            "temp": 298.15,
+            "altitude": 298.15,
+            "pressure": 298.15
+        },
+        "wind_dist_data": {
+            "w_shape_param": 298.15,
+            "velocity": 298.15,
+            "w_scale_param": 298.15,
+            "height": 298.15
+        },
+        "location": {
+            "lat": 298.15,
+            "long": 298.15
+        }
+    }
+}

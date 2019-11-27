@@ -1,9 +1,9 @@
 from math import ceil, pi
 
 # from third party
-import numpy as np
+from numpy import full, array, inf
 from scipy.optimize import minimize
-from matplotlib import pyplot as plt
+from matplotlib.pyplot import subplot, plot, title, legend, bar, show
 from scipy.integrate import quad
 
 '''
@@ -183,7 +183,7 @@ def lightingConstraint(x):
 
     denom = (lum_eff * pow_rate)
 
-    nl = np.inf if denom == 0 else (area_of_room * foot_candles) / denom
+    nl = inf if denom == 0 else (area_of_room * foot_candles) / denom
     return nl - 1
 
 
@@ -192,7 +192,7 @@ def coolingConstraint(x):
     total_power = sum([x[i] * cooling_power_rating[i-number_of_light_types]
                        for i in range(cooling_starting_index, cooling_ending_index)])
 
-    nl = np.inf if total_power == 0 else total_cooling_load / total_power
+    nl = inf if total_power == 0 else total_cooling_load / total_power
     return nl - 1
 
 
@@ -227,7 +227,7 @@ else:
 
 # initial guesses
 # x0=np.random.randint(max_guess, size=total_number_of_options)
-x0 = np.full(total_number_of_options, max_guess)
+x0 = full(total_number_of_options, max_guess)
 
 # solutions
 solutions = [x0]
@@ -264,40 +264,40 @@ for i in range(total_number_of_options):
 
     print('{:>15s} {} = {:.4f}'.format(text, i+offset, x[i]))
 
-solutions = np.array(solutions)
-energy, cost = np.array([calcObjective(x) for x in solutions]).T
+solutions = array(solutions)
+energy, cost = array([calcObjective(x) for x in solutions]).T
 
-plt.subplot(321)
-plt.plot(energy)
-plt.title('Energy against Number of Iterations')
-plt.legend(['Min Energy {:,.4f} Watt'.format(energy[-1])])
+subplot(321)
+plot(energy)
+title('Energy against Number of Iterations')
+legend(['Min Energy {:,.4f} Watt'.format(energy[-1])])
 
 
-plt.subplot(322)
-plt.plot(cost)
-plt.title('Cost against Number of Iterations')
-plt.legend(['Min Cost {:,.4f} Naira'.format(cost[-1])])
+subplot(322)
+plot(cost)
+title('Cost against Number of Iterations')
+legend(['Min Cost {:,.4f} Naira'.format(cost[-1])])
 
 light = solutions[:, 0:number_of_light_types]
-plt.subplot(323)
-plt.plot(light)
-plt.title('Number of Light Types against Number of Iterations')
-plt.legend(['x{} {:.4f}~{}'.format(i+1, x[i], ceil(x[i]))
+subplot(323)
+plot(light)
+title('Number of Light Types against Number of Iterations')
+legend(['x{} {:.4f}~{}'.format(i+1, x[i], ceil(x[i]))
             for i in range(light.shape[1])])
 
 cooling = solutions[:, cooling_starting_index:cooling_ending_index]
-plt.subplot(324)
-plt.plot(cooling)
-plt.title('Number of Cooling Types against Number of Iterations')
-plt.legend(['x{} {:.4f}~{}'.format(i+1, x[cooling_starting_index + i],
+subplot(324)
+plot(cooling)
+title('Number of Cooling Types against Number of Iterations')
+legend(['x{} {:.4f}~{}'.format(i+1, x[cooling_starting_index + i],
                                    ceil(x[cooling_starting_index + i])) for i in range(cooling.shape[1])])
 
 if not solar_state:
     wind = solutions[:, wind_starting_index:wind_ending_index]
-    plt.subplot(325)
-    plt.plot(wind)
-    plt.title('Rotor radius against Number of Iterations')
-    plt.legend(['x{} {:.4f}~{}'.format(i+1, x[wind_starting_index + i], ceil(x[wind_starting_index + i])
+    subplot(325)
+    plot(wind)
+    title('Rotor radius against Number of Iterations')
+    legend(['x{} {:.4f}~{}'.format(i+1, x[wind_starting_index + i], ceil(x[wind_starting_index + i])
                                        if i == 1 else x[wind_starting_index + i]) for i in range(wind.shape[1])])
 
 else:
@@ -337,13 +337,13 @@ else:
         print(total_pv_costs)
         print(pv_energy)
 
-        plt.subplot(325)
-        plt.title('Solar PV Cost')
-        plt.bar(range(1, length_of_solar_options+1), total_pv_costs)
+        subplot(325)
+        title('Solar PV Cost')
+        bar(range(1, length_of_solar_options+1), total_pv_costs)
 
-        plt.subplot(326)
-        plt.title('Solar PV Energy')
-        plt.bar(range(1, length_of_solar_options+1), pv_energy)
+        subplot(326)
+        title('Solar PV Energy')
+        bar(range(1, length_of_solar_options+1), pv_energy)
 
 # show all plots
-plt.show()
+show()

@@ -1,0 +1,28 @@
+{
+    "ECLIPSAL NRG72 310M": {
+        "cell_type": "mono-crystalline, 3 bus bar",
+        "rated power": 310.0,
+        "max_p_volt": 36.78,
+        "max_p_cur": 8.43,
+        "open_c_vol": 45.12,
+        "short_c_cur": 8.92,
+        "fuse_rating": 15.0,
+        "max_sys_volt": 1000.0,
+        "op_temp_l": 86.0,
+        "op_temp_u": -40.0,
+        "pow_tol_l": 0.0,
+        "pow_tol_u": 2.0,
+        "Temp Coeff": {
+            "temp_coeff_p": -0.484,
+            "temp_coeff_v": -0.363,
+            "temp_coeff_i": -0.047
+        },
+        "mod_dim": {
+            "length": 1.983,
+            "breadth": 0.997,
+            "height": 0.042
+        },
+        "mod_eff": 17.0,
+        "weight": 25.0
+    }
+}

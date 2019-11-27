@@ -1,0 +1,35 @@
+{
+    "rooms": {
+        "ade office": {
+            "room_type": "OFFICES",
+            "button": "btn_add_office",
+            "appliances": {
+                "Lightning (Fluorescent)": {
+                    "power_rating": 60.0,
+                    "units": 1,
+                    "operating_hours": 1
+                }
+            },
+            "cooling_load": {
+                "result": {},
+                "saved_data": {}
+            }
+        },
+        "chem": {
+            "room_type": "LABORATORIES",
+            "button": "btn_add_laboratory",
+            "appliances": {
+                "Printer": {
+                    "power_rating": 300.0,
+                    "units": 1,
+                    "operating_hours": 1
+                }
+            },
+            "cooling_load": {
+                "result": {},
+                "saved_data": {}
+            }
+        }
+    },
+    "retrofit": {}
+}

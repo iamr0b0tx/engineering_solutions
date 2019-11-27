@@ -1,0 +1,42 @@
+{
+    "Hitatchi Wind Turbine": {
+        "rated_power": 2000,
+        "cut_in_wind_speed": 4,
+        "cut_out_wind_speed": 25,
+        "rotor_diameter": 80,
+        "hub_height": 78,
+        "units": 4,
+        "blade_length": 39,
+        "no_blades": 3
+    },
+    "Mikano Wind Turbine": {
+        "rated_power": 2000,
+        "cut_in_wind_speed": 4,
+        "cut_out_wind_speed": 25,
+        "rotor_diameter": 80,
+        "hub_height": 78,
+        "units": 4,
+        "blade_length": 39,
+        "no_blades": 3
+    },
+    "Toyota Wind Turbine": {
+        "rated_power": 2000,
+        "cut_in_wind_speed": 4,
+        "cut_out_wind_speed": 25,
+        "rotor_diameter": 80,
+        "hub_height": 78,
+        "units": 4,
+        "blade_length": 39,
+        "no_blades": 3
+    },
+    "HITACHI TURBINE 104": {
+        "rated_power": 298.15,
+        "cut_in_wind_speed": 298.15,
+        "cut_out_wind_speed": 298.15,
+        "rotor_diameter": 298.15,
+        "hub_height": 298.15,
+        "units": 4,
+        "blade_length": 3.4,
+        "no_blades": 3
+    }
+}

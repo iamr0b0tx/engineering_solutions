@@ -1,0 +1,112 @@
+{
+    "room_det": {
+        "room_area": 7,
+        "foot_candles": 50,
+        "weather": {
+            "indoor": {
+                "dry_bulb": 10.0,
+                "humidity": 25.6
+            },
+            "outdoor": {
+                "dry_bulb": 33.6,
+                "humidity": 17.43
+            }
+        },
+        "level_activity": "Moderately active work (office)",
+        "type_space": "Class Room",
+        "heat_gained": {
+            "infiltration_rate": 0.3,
+            "height": 136.16,
+            "people": {
+                "men": 35,
+                "women": 20
+            },
+            "glass": {
+                "north": 6.57,
+                "east": 0.0,
+                "south": 18.53,
+                "west": 0.0
+            },
+            "walls": {
+                "north": 28.89,
+                "east": 7.68,
+                "south": 16.93,
+                "west": 7.68
+            },
+            "roof": {
+                "floor_area": 104.4
+            }
+        }
+    },
+    "constants": {
+        "th_walls": {
+            "concrete": {
+                "length": 8.0,
+                "conductivity": 1.73
+            },
+            "plaster_in": {
+                "length": 12.5,
+                "conductivity": 8.65
+            },
+            "plaster_out": {
+                "length": 12.5,
+                "conductivity": 8.65
+            },
+            "outside_film": {
+                "length": 1.0,
+                "conductivity": 0.04
+            },
+            "inside_film": {
+                "length": 1.0,
+                "conductivity": 0.12
+            }
+        },
+        "th_roof": {
+            "concrete": {
+                "length": 20.0,
+                "conductivity": 1.73
+            },
+            "plaster": {
+                "length": 12.5,
+                "conductivity": 8.65
+            },
+            "outside_film": {
+                "length": 1.0,
+                "conductivity": 9.4
+            },
+            "inside_film": {
+                "length": 1.0,
+                "conductivity": 6.3
+            }
+        },
+        "th_glass": 6.12,
+        "scl": {
+            "north": 15.76,
+            "east": 15.76,
+            "south": 5.51,
+            "west": 46.07
+        },
+        "sc": {
+            "north": 0.82,
+            "east": 0.82,
+            "south": 0.82,
+            "west": 0.82
+        },
+        "cltd": {
+            "walls": {
+                "north": 3.0,
+                "east": 3.0,
+                "south": 42.7,
+                "west": 42.7
+            },
+            "glass": {
+                "north": 7.0,
+                "east": 7.0,
+                "south": 7.0,
+                "west": 7.0
+            },
+            "roof": 30.83
+        }
+    },
+    "appliances": {}
+}

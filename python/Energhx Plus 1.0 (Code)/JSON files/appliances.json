@@ -1,0 +1,72 @@
+{
+    "Lightning (Fluorescent)":{
+        "power_rating": 9.0,
+        "units": 9,
+        "operating_hours": 4
+    },
+    "Lightning (Others)":{
+        "power_rating": 9.0,
+        "units": 9,
+        "operating_hours": 4
+    },
+    "Router": {
+        "power_rating": 3,
+        "units": 2,
+        "operating_hours": 5
+    },
+    "Alarm System": {
+        "power_rating": 5,
+        "units": 2,
+        "operating_hours": 1
+    },
+    "Decoder": {
+        "power_rating": 10,
+        "units": 2,
+        "operating_hours": 12
+    },
+    "Radio": {
+        "power_rating": 56.0,
+        "units": 3,
+        "operating_hours": 2
+    },
+    "Electric Fan": {
+        "power_rating": 50.0,
+        "units": 4,
+        "operating_hours": 4
+    },
+    "Standard Fridge": {
+        "power_rating": 70.0,
+        "units": 2,
+        "operating_hours": 6
+    },
+    "Television": {
+        "power_rating": 70.0,
+        "units": 2,
+        "operating_hours": 6
+    },
+    "Printer": {
+        "power_rating": 70.0,
+        "units": 2,
+        "operating_hours": 6
+    },
+    "Iron": {
+        "power_rating": 70.0,
+        "units": 2,
+        "operating_hours": 6
+    },
+    "Computer": {
+        "power_rating": 70.0,
+        "units": 2,
+        "operating_hours": 6
+    },
+    "Phone Charger": {
+        "power_rating": 70.0,
+        "units": 2,
+        "operating_hours": 6
+    },
+    "Air Conditioner": {
+        "power_rating": 70.0,
+        "units": 2,
+        "operating_hours": 6
+    }
+}
