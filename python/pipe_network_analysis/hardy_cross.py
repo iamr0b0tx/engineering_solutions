@@ -1,29 +1,29 @@
-from utils import updateNodes
+from utils import updateNodes, pprint, FILE
 
-def runHardyCrossIteration(K, N, NODES, Q, QNODE, loops):
-    # the loops
-    loops_n = len(loops)
+import numpy as np
 
+
+def runHardyCrossIteration(K, N, NODES, Q, QNODE, F, loops, lengths, diameters, iteration):
     # correction factors
     cfs = {}
 
-    s_delta = 0
+    correction_factors = []
     for loop_i, current_loop in enumerate(loops):
-        print('loop = {}, current_loop = {}'.format(loop_i+1, current_loop))
+        pprint('loop = {}, current_loop = {}'.format(loop_i+1, current_loop), file=FILE)
 
         s_hl, s = 0, 0
         nodes = []
         for nn in current_loop:
             node1, node2 = nn
-
             nodes.append(nn)
             
             if nn not in cfs:
                 cfs[nn] = []
             
             # the assumed flow rate and k
-            q_a = NODES[node2][node1][Q]
-            k = NODES[node2][node1][K]
+            q_a = NODES[node1][node2][Q]
+            k = NODES[node1][node2][K]
+            f = NODES[node1][node2][F]
 
             # calc for this iteration
             hl = k * (abs(q_a)**N)
@@ -36,8 +36,11 @@ def runHardyCrossIteration(K, N, NODES, Q, QNODE, loops):
 
             # qo, hlo, itero = q_a, hl, iter
             # display iter result
-            print('node: {} to {}, q = {}, k = {}, H_L = {}, iter = {}'.format(
-                node1, node2, q_a, k, hl, result))
+            pprint('node: {} to {}, q = {}, k = {}, F = {}, H_L = {}, iter = {}'.format(
+                    node1, node2, q_a, k, f, hl, result
+                ),
+                file=FILE
+            )
 
         # correction factor
         delta = -(s_hl / s)
@@ -46,10 +49,14 @@ def runHardyCrossIteration(K, N, NODES, Q, QNODE, loops):
         for nn in nodes:
             cfs[nn].append(delta)
 
-        print(f'delta = {delta}\n')
+        pprint(f'delta = {delta}\n', file=FILE)
 
-        s_delta += abs(delta)
+        correction_factors.append(delta)
+
+    correction_factors = np.array(correction_factors)
+    pprint('Correction\n============\n{}\n'.format(
+        correction_factors), file=FILE)
 
     # update the nodes
-    updateNodes(cfs, Q, QNODE, NODES)
-    return s_delta/loops_n
+    updateNodes(cfs, Q, QNODE, NODES, lengths, diameters, iteration)
+    return correction_factors
